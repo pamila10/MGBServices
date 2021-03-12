@@ -1,0 +1,10 @@
+@mixin button {
+    display: inline-block;
+    width: 287px;
+    font-size: 20px;
+    text-align: center;
+    padding: 21px 10px;
+    text-transform: uppercase;
+    background-color: #e1aa6e;
+    border-bottom: 10px solid #ba8e5b;
+}
