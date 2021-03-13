@@ -49,9 +49,11 @@
   }
   .join-team-block {
     .join-team-block-content {
+      width: 100%;
+      min-height: 487px;
       .img-block {
         width: 50%;
-        height: auto;
+        height: 100%;
         img {
           width: 100%;
           height: 487px;
@@ -98,7 +100,7 @@
         }
         .navbar {
           display: none;
-          position: absolute;
+          position: fixed;
           left: 0;
           top: 0px;
           flex-direction: column;
