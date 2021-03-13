@@ -52,6 +52,7 @@ body {
     .navbar-block {
       .hamburger-button {
         display: none;
+        cursor: pointer;
         width: 18px;
         height: 22px;
         background-color: transparent;
@@ -135,6 +136,7 @@ body {
           top: 110px;
           left: 0;
           background-color: #e1aa6e;
+          z-index: 10;
           display: none;
           a {
             padding-top: 10px;
@@ -251,12 +253,19 @@ body {
     background-repeat: no-repeat;
   }
   .slider {
+    width: 1px;
+    min-width: 100%;
     width: 756px;
     margin: 0 auto;
     img {
       width: 756px;
       height: 495px;
       object-fit: cover;
+    }
+    .slick-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     .slick-list {
       overflow: hidden;
@@ -276,9 +285,14 @@ body {
     .img-block {
       width: 608px;
       height: 440px;
+      img {
+        width: 608px;
+        height: 440px;
+      }
     }
     .text-block {
       width: 592px;
+      height: 440px;
       padding-left: 30px;
       padding-right: 95px;
       background-color: #367ab7;

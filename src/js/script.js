@@ -33,7 +33,7 @@ function addDropBtn() {
     }
     dropBtn.addEventListener('pointerenter', toggleBtn);
     // Close drop content
-    dropList.addEventListener('mouseleave', (e) => {
+    dropList.addEventListener(('mouseleave' || 'touchend'), (e) => {
         if (e.target.id === dropList) {
             dropContent.style.display = 'inline-block';
         } else {
