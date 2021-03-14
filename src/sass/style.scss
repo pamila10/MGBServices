@@ -277,10 +277,11 @@ body {
     justify-content: space-between;
     .img-block {
       width: 608px;
-      height: 440px;
+      height: auto;
       img {
         width: 608px;
-        height: 440px;
+        height: 100%;
+        object-fit: cover;
       }
     }
     .text-block {
