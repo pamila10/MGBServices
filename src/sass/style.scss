@@ -36,9 +36,7 @@ body {
 }
 
 .top-block {
-  .container {
-    background-image: url("../imgs/banner.jpg");
-  }
+  background: url("../imgs/banner.jpg") center / cover no-repeat;
   header {
     display: flex;
     justify-content: space-between;
@@ -193,9 +191,7 @@ body {
   }
 }
 .ages-block {
-  .container {
-    background-color: $blue;
-  }
+  background-color: $blue;
   .ages-block-content {
     .ages-text-block {
       text-align: center;
@@ -213,9 +209,10 @@ body {
     }
     .ages-img-block {
       margin: 0 auto;
-      width: 948px;
-      height: 220px;
-      background-image: url("../imgs/age.png");
+      max-width: 948px;
+      img {
+        width: 100%;
+      }
     }
   }
 }
@@ -243,14 +240,11 @@ body {
   }
 }
 .slider-block {
+  background: $blue url("../imgs/toys.png") center bottom no-repeat;
   .container {
     height: 600px;
     padding-top: 144px;
     margin-bottom: 113px;
-    background-color: $blue;
-    background-image: url("../imgs/toys.png");
-    background-position: center bottom;
-    background-repeat: no-repeat;
   }
   .slider {
     width: 756px;
